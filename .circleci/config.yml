@@ -78,14 +78,14 @@ jobs:
       - checkout
       # Restore from cache
       - restore_cache:
-        keys: [frontend-build]
+          keys: [frontend-build]
       # Your job code here
       - run:
-        name: frontend test
-        command: |
-           # Your code here
-           npm i --prefix frontend
-           npm run test --prefix frontend
+          name: frontend test
+          command: |
+            # Your code here
+            npm i --prefix frontend
+            npm run test --prefix frontend
 
   test-backend:
     docker:
@@ -96,14 +96,14 @@ jobs:
       - checkout
       # Restore from cache
       - restore_cache:
-        keys: [backend-build]
+          keys: [backend-build]
       # Your job code here
       - run:
-        name: backend test
-        command: |
-           # Your code here
-           npm i --prefix backend
-           npm run test --prefix backend
+          name: backend test
+          command: |
+            # Your code here
+            npm i --prefix backend
+            npm run test --prefix backend
             
   scan-frontend:
     docker:
@@ -114,13 +114,13 @@ jobs:
       - checkout
       # Restore from cache
       - restore_cache:
-        keys: [frontend-build]
+          keys: [frontend-build]
       # Your job code here
       - run:
-        name: frontend scan
-        command: |
-           # Your code here
-           npm audit fix --audit-level=critical --force --prefix frontend
+          name: frontend scan
+          command: |
+            # Your code here
+            npm audit fix --audit-level=critical --force --prefix frontend
 
   scan-backend:
     docker:
@@ -131,13 +131,13 @@ jobs:
       - checkout
       # Restore from cache
       - restore_cache:
-        keys: [backend-build]
+          keys: [backend-build]
       # Your job code here
       - run:
-        name: backend scan
-        command: |
-           # Your code here
-           npm audit fix --audit-level=critical --force --prefix backend
+          name: backend scan
+          command: |
+            # Your code here
+            npm audit fix --audit-level=critical --force --prefix backend
 
 #   deploy-infrastructure:
 #     docker:
