@@ -6,17 +6,15 @@ Public URL for your S3 Bucket (aka, your green candidate front-end) [URL02]
 https://udapeople-goldin20082020.s3-us-west-2.amazonaws.com
 
 Public URL for your CloudFront distribution (aka, your blue production front-end) [URL03]
-d2w3r79mg45423.cloudfront.net
+
 
 Public URLs to deployed application back-end in EC2 [URL04]
-http://ec2-54-185-82-65.us-west-2.compute.amazonaws.com:3030/
+
 
 Public URL to your Prometheus Server [URL05]
-http://ec2-35-160-38-90.us-west-2.compute.amazonaws.com:9090/targets
+
 
 [URL5b] Grafana Dashboard
-http://ec2-35-160-38-90.us-west-2.compute.amazonaws.com:3000/d/mRSUn9dGz/udapeople?orgId=1
-Username: udacity
-Password: 12345678
+
 
 
